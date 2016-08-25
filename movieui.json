@@ -1,0 +1,43 @@
+{
+  "id": "/moviesui",
+  "cmd": null,
+  "cpus": 0.5,
+  "mem": 1000,
+  "disk": 0,
+  "instances": 1,
+  "acceptedResourceRoles": [
+    "slave_public"
+  ],
+  "container": {
+    "type": "DOCKER",
+    "volumes": [],
+    "docker": {
+      "image": "dockerniu/ui-search",
+      "network": "BRIDGE",
+      "portMappings": [
+        {
+          "containerPort": 1111,
+          "hostPort": 1111,
+          "servicePort": 10003,
+          "protocol": "tcp",
+          "labels": {}
+        }
+      ],
+      "privileged": false,
+      "parameters": [
+        {
+          "key": "net",
+          "value": "microservice"
+        }
+      ],
+      "forcePullImage": false
+    }
+  },
+  "portDefinitions": [
+    {
+      "port": 10003,
+      "protocol": "tcp",
+      "labels": {}
+    }
+  ]
+}
