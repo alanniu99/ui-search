@@ -1,5 +1,5 @@
 {
-  "id": "/moviesui",
+  "id": "/movieapps/movie-services/moviesui",
   "cmd": null,
   "cpus": 0.5,
   "mem": 1000,
@@ -17,8 +17,6 @@
       "portMappings": [
         {
           "containerPort": 1111,
-          "hostPort": 1111,
-          "servicePort": 10003,
           "protocol": "tcp",
           "labels": {}
         }
@@ -32,12 +30,5 @@
       ],
       "forcePullImage": false
     }
-  },
-  "portDefinitions": [
-    {
-      "port": 10003,
-      "protocol": "tcp",
-      "labels": {}
-    }
-  ]
+  }
 }
