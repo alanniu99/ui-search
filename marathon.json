@@ -1,4 +1,4 @@
-{
+[{
   "id": "/movieapps/movie-services/moviesui",
   "cmd": null,
   "cpus": 0.2,
@@ -28,4 +28,4 @@
       "forcePullImage": false
     }
   }
-}
+}]
