@@ -26,7 +26,7 @@ import java.io.IOException;
 @EnableFeignClients(basePackages = "service.clients")
 @EnableWebMvc
 @EnableAutoConfiguration
-@EnableZuulProxy
+//@EnableZuulProxy
 @EnableVaadin
 @Controller
 public class Application extends SpringBootServletInitializer {
