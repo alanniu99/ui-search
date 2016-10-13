@@ -1,10 +1,15 @@
 [{
-  "id": "/movieapps/movie-services/moviesui",
+  "id": "/movies-site/moviesui",
   "cmd": null,
   "cpus": 0.2,
   "mem": 1000,
   "disk": 0,
   "instances": 1,
+   "labels": {
+    "HAPROXY_GROUP": "external",
+    "HAPROXY_0_VHOST": "mesos-slave1",
+    "HAPROXY_0_MODE": "http"
+  },
   "container": {
     "type": "DOCKER",
     "volumes": [],
@@ -14,6 +19,7 @@
       "portMappings": [
         {
           "containerPort": 1111,
+          "servicePort": 8080,
           "protocol": "tcp",
           "labels": {}
         }
