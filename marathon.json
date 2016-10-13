@@ -1,5 +1,5 @@
 [{
-  "id": "/movies-sit/moviesui",
+  "id": "/movies-sit/movies/moviesui",
   "cmd": null,
   "cpus": 0.2,
   "mem": 1000,
